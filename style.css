@@ -66,8 +66,7 @@
 }
 
 /* Heading */
-.list-title,
-.label[for="new-task"] {
+.list-title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
