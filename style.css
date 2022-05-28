@@ -8,11 +8,11 @@
 .header {
   width: 500px;
   margin: 0 auto;
-  display: block;
   text-align: right;
 }
 
 .header__img {
+  display: block;
   width: 100%;
 }
 
@@ -21,13 +21,12 @@
 }
 
 .main {
-  display: block;
   width: 500px;
-  margin: 0 auto 0;
+  margin: 1em auto 0;
 }
 
 .task {
-  width: 56%;
+  box-sizing: border-box;
   display: inline-block;
   flex-grow: 1;
 }
@@ -39,16 +38,7 @@
 .list {
   margin: 0;
   padding: 0;
-}
-
-.list-item, 
-.title {
   list-style: none;
-}
-
-.input,
-.btn {
-  outline: none;
 }
 
 .btn {
@@ -58,7 +48,7 @@
   font-size: 15px;
   width: 60px;
   font-family: Lato, sans-serif;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 .btn:hover {
@@ -76,7 +66,7 @@
   text-transform: uppercase;
 }
 
-.input-text {
+.input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -87,16 +77,20 @@
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
+  outline: none;
 }
 
-.input-text:focus {
+.input:focus {
   color: #333;
 }
 
 /* New Task */
-.title {
-  display: block;
-  margin: 0 0 20px;
+.add-item {
+  margin-bottom: 1em;
+}
+
+.add-item__title {  
+  margin-bottom: 20px;
 }
 
 .add-item__input {
@@ -113,28 +107,25 @@
   align-items: center;
 }
 
-/* .container__list-item > * {
-  vertical-align: middle;
-} */
-
 .checkbox {
   margin: 0 10px;
 }
 
 .label {
   padding-left: 10px;
-  box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.todo__input-text {
+.todo__input {
   width: 226px;
   display: none;
 }
 
 .remove {
+  display: block;
   height: 2em;
+  margin: 0 auto;  
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
@@ -150,11 +141,11 @@
 }
 
 /* Edit Task */
-.completed__input-text {
+.completed__input {
   display: none;
 }
 
-.item_edit .input-text {
+.item_edit .input {
   display: inline-block;
   width: 224px;
 }
