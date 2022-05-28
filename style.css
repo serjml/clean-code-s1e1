@@ -32,7 +32,7 @@
   flex-grow: 1;
 }
 
-.add__task {
+.add-item__task {
   display: flex;
 }
 
@@ -99,7 +99,7 @@
   margin: 0 0 20px;
 }
 
-.add__input {
+.add-item__input {
   width: 318px;
 }
 
@@ -165,7 +165,7 @@
 
 @media (max-width: 768px) {
 
-  .aaa {
+  .header {
     text-align: center;
   }
 
