@@ -5,22 +5,22 @@
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa__img {
+.header__img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.header__info {
   font-family: fantasy, cursive;
 }
 
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -32,7 +32,7 @@
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add__task {
   display: flex;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .list-item, 
-.list-title {
+.title {
   list-style: none;
 }
 
@@ -66,7 +66,7 @@
 }
 
 /* Heading */
-.list-title {
+.title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -76,7 +76,7 @@
   text-transform: uppercase;
 }
 
-.input[type="text"] {
+.input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -89,17 +89,17 @@
   color: #888;
 }
 
-.input[type="text"]:focus {
+.input-text:focus {
   color: #333;
 }
 
 /* New Task */
-.label[for="new-task"] {
+.title {
   display: block;
   margin: 0 0 20px;
 }
 
-.input#new-task {
+.add__input {
   width: 318px;
 }
 
@@ -113,52 +113,53 @@
   align-items: center;
 }
 
-.list-item > * {
+/* .container__list-item > * {
   vertical-align: middle;
-}
+} */
 
-.list-item > .input[type="checkbox"] {
+.checkbox {
   margin: 0 10px;
 }
 
-.list-item > .label {
+.label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-item >    .input[type="text"] {
+.todo__input-text {
   width: 226px;
+  display: none;
 }
 
-.btn.delete .remove {
+.remove {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn.delete .remove:hover {
+.remove:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.list#completed-tasks .label {
+.completed__list .label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list .list-item .input[type=text] {
+.completed__input-text {
   display: none;
 }
 
-.list .list-item.editMode .input[type=text] {
+.item_edit .input-text {
   display: inline-block;
   width: 224px;
 }
 
-.list .list-item.editMode .label {
+.item_edit .label {
   display: none;
 }
 
